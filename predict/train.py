@@ -11,9 +11,9 @@ y = dataset.iloc[:, 1].values
 # Splitting the dataset into the Training set and Test set
 
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=1 / 3, random_state=0)
+    X, y, test_size=0.33, random_state=0, shuffle=True, stratify=None)
 
-# Fitting Simlple Regression Data Set into Training Set
+# Fitting Simple Regression Data Set into Training Set
 print("X_test")
 print(X_test)
 
